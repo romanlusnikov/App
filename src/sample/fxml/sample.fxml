@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="994.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <tabs>
+    <Tab fx:id="cars" onSelectionChanged="#carsTable" text="Автомобили">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tableViewCar" layoutX="14.0" layoutY="12.0" prefHeight="436.0" prefWidth="969.0">
+                    <columns>
+                      <TableColumn fx:id="codeCarColumn" prefWidth="159.0" text="Код авто" />
+                      <TableColumn fx:id="numberCarColumn" prefWidth="316.0" text="Номер авто" />
+                        <TableColumn fx:id="stampСarColumn" prefWidth="272.0" text="Марка " />
+                        <TableColumn fx:id="colorCarColumn" prefWidth="219.0" text="Цвет" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="addCar" layoutX="914.0" layoutY="455.0" mnemonicParsing="false" onAction="#addCar" text="Добавить" />
+                  <Button fx:id="deleteCar" layoutX="847.0" layoutY="455.0" mnemonicParsing="false" onAction="#deleteCar" text="Удалить" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="drivers" onSelectionChanged="#driversTable" text="Водители">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="TableViewDriver" layoutX="15.0" layoutY="12.0" prefHeight="435.0" prefWidth="968.0">
+                     <columns>
+                        <TableColumn fx:id="codeDriverColumn" prefWidth="212.0" text="Код водителя" />
+                        <TableColumn fx:id="fullNameDriverColumn" prefWidth="578.0" text="ФИО водителя" />
+                        <TableColumn fx:id="numberDriverColumn" prefWidth="176.0" text="Номер телефона" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="addDriver" layoutX="914.0" layoutY="455.0" mnemonicParsing="false" onAction="#addDriver" text="Добавить" />
+                  <Button fx:id="deleteDriver" layoutX="847.0" layoutY="455.0" mnemonicParsing="false" onAction="#deleteDriver" text="Удалить" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="route" onSelectionChanged="#routeTable" text="Маршруты">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="TableViewRoute" layoutX="14.0" layoutY="11.0" prefHeight="438.0" prefWidth="965.0">
+                     <columns>
+                        <TableColumn fx:id="codeRouteColumn" prefWidth="207.0" text="Код маршрута" />
+                        <TableColumn fx:id="nameRouteColumn" prefWidth="452.0" text="Название маршрута" />
+                        <TableColumn fx:id="lengthRouteColumn" prefWidth="304.0" text="Протяженность" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="addRoute" layoutX="911.0" layoutY="455.0" mnemonicParsing="false" onAction="#addRoute" text="Добавить" />
+                  <Button fx:id="deleteRoute" layoutX="844.0" layoutY="455.0" mnemonicParsing="false" onAction="#deleteRoute" text="Удалить" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab fx:id="trip" onSelectionChanged="#tripTable" text="Рейсы">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="TableViewTrip" layoutX="14.0" layoutY="11.0" prefHeight="439.0" prefWidth="967.0">
+                     <columns>
+                        <TableColumn fx:id="codeTripColumn" prefWidth="64.0" text="Код рейса" />
+                        <TableColumn fx:id="codeCarTripColumn" prefWidth="135.0" text="Код машины" />
+                        <TableColumn fx:id="codeDriverTripColumn" prefWidth="106.0" text="Код водителя" />
+                        <TableColumn fx:id="codeRouteTripColumn" prefWidth="106.0" text="Код маршрута" />
+                        <TableColumn fx:id="dateTripColumn" prefWidth="109.0" text="Дата рейса" />
+                        <TableColumn fx:id="travelTimeColumn" prefWidth="137.0" text="Время в пути(мин)" />
+                        <TableColumn fx:id="costColumn" prefWidth="112.0" text="Стоимость" />
+                        <TableColumn fx:id="descriptionColumn" prefWidth="304.0" text="Описание" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="addTrip" layoutX="911.0" layoutY="455.0" mnemonicParsing="false" onAction="#addTrip" text="Добавить" />
+                  <Button fx:id="deleteTrip" layoutX="840.0" layoutY="455.0" mnemonicParsing="false" onAction="#deleteTrip" text="Удалить" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

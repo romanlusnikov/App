@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="249.0" prefWidth="393.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.addController.addDriverController">
+   <children>
+      <TextField fx:id="codeDriver" layoutX="210.0" layoutY="82.0" />
+      <TextField fx:id="number" layoutX="210.0" layoutY="166.0" />
+      <TextField fx:id="fullName" layoutX="144.0" layoutY="121.0" prefHeight="25.0" prefWidth="214.0" />
+      <Text layoutX="41.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Код водителя:" />
+      <Text layoutX="38.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ФИО водителя:" />
+      <Text layoutX="41.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Номер телефона:" />
+      <Text layoutX="80.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Заполните данные водителя">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Button fx:id="add" layoutX="156.0" layoutY="214.0" mnemonicParsing="false" onAction="#add" text="Добавить" />
+      <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="29.0" text="←" />
+   </children>
+</AnchorPane>

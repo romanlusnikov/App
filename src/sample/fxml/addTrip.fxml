@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="544.0" prefWidth="402.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.addController.addTripController">
+   <children>
+      <TextField fx:id="codeTrip" layoutX="214.0" layoutY="81.0" />
+      <TextField fx:id="numberCar" layoutX="213.0" layoutY="165.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="codeDriver" layoutX="213.0" layoutY="120.0" prefHeight="26.0" prefWidth="149.0" />
+      <Text layoutX="45.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Код рейса:" />
+      <Text layoutX="84.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Заполните данные маршрута">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Button fx:id="add" layoutX="163.0" layoutY="510.0" mnemonicParsing="false" onAction="#add" text="Добавить" />
+      <Text layoutX="46.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Код водителя:" />
+      <Text layoutX="42.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Номер машины:" />
+      <Text layoutX="42.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата рейса:" />
+      <TextField fx:id="dateTrip" layoutX="213.0" layoutY="206.0" prefHeight="25.0" prefWidth="149.0" />
+      <Text layoutX="42.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Время в пути(мин):" />
+      <TextField fx:id="travelTime" layoutX="213.0" layoutY="250.0" prefHeight="25.0" prefWidth="149.0" />
+      <Text layoutX="42.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Стоимость:" />
+      <TextField fx:id="cost" layoutX="213.0" layoutY="290.0" prefHeight="25.0" prefWidth="149.0" />
+      <Text layoutX="42.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Описание:" />
+      <TextField fx:id="description" layoutX="214.0" layoutY="333.0" prefHeight="164.0" prefWidth="149.0" />
+      <Button layoutX="14.0" layoutY="12.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="29.0" text="←" />
+   </children>
+</AnchorPane>
